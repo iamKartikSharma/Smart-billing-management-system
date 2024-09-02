@@ -1,0 +1,148 @@
+.invoice {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 100vw;
+    margin: 0 auto;
+    border: 2px solid #0a0d24;
+  }
+  
+  h1 {
+    color: #10124F;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invoice-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0a0d24;
+    background-color: #10124f9f;
+    border-radius: 4px;
+  }
+  .invoice-form input:active{
+    border: 1px solid orangered;
+  }
+  .invoice-form input::placeholder{
+    color: white;
+  }
+  .items-section {
+    margin-bottom: 20px;
+  }
+  
+  .item-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .item-row input {
+    flex: 1;
+  }
+  
+  button {
+    padding-inline: 40px;
+    padding-block: 10px;
+    background-color: #10124F;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0a0d24;
+  }
+  
+  .total-section {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .generate-btn {
+    align-self: flex-start;
+  }
+  
+.invoice {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #10124F; 
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar-buttons button:hover {
+    background: #242a74; 
+  }
+  
+  .sidebar-buttons button.active {
+    background: #4c55a4; 
+    border-radius: 4px;
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  ::placeholder{
+    color: black;
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+    }
+  
+    .sidebar-buttons {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .sidebar-buttons button {
+      padding: 10px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
